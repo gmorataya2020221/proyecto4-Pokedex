@@ -36,8 +36,10 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 var _this = this;
 document.addEventListener('DOMContentLoaded', function () {
-    var random = getRandomInt(1, 151);
-    fetchData(random);
+    for (var i = 0; i < 6; i++) {
+        var random = getRandomInt(1, 151);
+        fetchData(random);
+    }
 });
 var getRandomInt = function (min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
@@ -88,12 +90,3 @@ var pintaCard = function (pokemon) {
     fragment.appendChild(clone);
     flex.appendChild(fragment);
 };
-function multiplicarInputs(text) {
-    var num = text.value;
-    var div = '';
-    for (var i = 0; i < num; i++) {
-        var cont = i + 1;
-        div += "<br> Input text " + cont + "<input maxlength='5' name='inputTextMulti[]' size='6' type='text' />&nbsp;";
-    }
-    document.getElementById("divMultiInputs").innerHTML = div;
-}

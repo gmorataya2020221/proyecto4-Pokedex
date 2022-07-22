@@ -4,17 +4,17 @@
     --dark-grayish-blue: hsl(227, 10%, 46%);
     --dark-gray: hsl(0, 0%, 59%);
   }
- 
+
   html {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     font-size: 52.5%;
   }
   
- /* *, *:before, *:after {
+  *, *:before, *:after {
     -webkit-box-sizing: inherit;
             box-sizing: inherit;
-  }*/
+  }
 
   #about {
     width: 350px;
@@ -30,18 +30,27 @@
     background-position: right 50vw bottom 50vh, left 50vw top 50vh;
   }
   
-  /*.flex {
+  .pokemon-container {
+    margin: 0 0 1rem;
+    height: 10rem;
+    display: flex;
+    align-items: start;
+  }
+  .template-card {
+    background: #60e0b0;
+    padding: .2rem;
+  }
+  
+  .flex {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 100vh;
-  }*/
+    height: 60vh;
+    margin-right: 175px;
+    margin-left: 175px;
+  }
   
   .card {
     background-color: white;
@@ -49,6 +58,7 @@
     border-radius: 30px;
     -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
             box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-left: 20px;
     
   }
   
